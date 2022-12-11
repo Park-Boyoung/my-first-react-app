@@ -25,6 +25,7 @@ import ConditionalRender2 from "./components/ConditionalRender2";
 import PracticeOne from "./components/PracticeOne";
 import PracticeTwo from "./components/PracticeTwo";
 import TestUseEffect from "./components/TestUseEffect";
+import Timer from "./components/Timer";
 
 // function App() {
 //   return (
@@ -78,6 +79,8 @@ function App() {
   //   practice === "1번" ? setPractice("2번") : setPractice("1번");
   // };
 
+  const [show, setShow] = useState(false);
+
   return (
     <div className="App">
       {/* <MainHeader text="Hello, props world!" /> */}
@@ -123,7 +126,9 @@ function App() {
       {/* {practice === "1번" ? <PracticeOne text="1번" /> : <PracticeTwo text="2번" />}
       <button onClick={onChange}>{practice}</button> */}
 
-      <TestUseEffect />
+      {/* <TestUseEffect /> */}
+      {show && <Timer />}
+      <button onClick={() => setShow(!show)}>버튼</button>
     </div>
   );
 }
