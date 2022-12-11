@@ -18,6 +18,7 @@ import ChangeFocus from "./components/ChangeFocus";
 import RefDOM from "./components/RefDOM";
 import RandomQuiz from "./components/RandomQuiz";
 import ReactFragment from "./components/ReactFragment";
+import TableColumn from "./components/TableColumn";
 
 // function App() {
 //   return (
@@ -83,7 +84,22 @@ function App() {
       {/* <ChangeFocus /> */}
       {/* <RefDOM /> */}
       {/* <RandomQuiz /> */}
-      <ReactFragment />
+      {/* <ReactFragment /> */}
+      {/* <h1>안녕하세요!</h1>
+      <span>반갑습니다!</span> */}
+
+      <table border="1">
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <TableColumn />
+          </tr>
+        </tbody>
+      </table>
     </div>
   );
 }
