@@ -19,6 +19,11 @@ import RefDOM from "./components/RefDOM";
 import RandomQuiz from "./components/RandomQuiz";
 import ReactFragment from "./components/ReactFragment";
 import TableColumn from "./components/TableColumn";
+import ConditionalRender from "./components/ConditionalRender";
+import { useState } from "react";
+import ConditionalRender2 from "./components/ConditionalRender2";
+import PracticeOne from "./components/PracticeOne";
+import PracticeTwo from "./components/PracticeTwo";
 
 // function App() {
 //   return (
@@ -62,6 +67,16 @@ function App() {
   //   },
   // ];
 
+  // const [condition, setCondition] = useState("1번");
+  // const onChange = () => {
+  //   condition === "1번" ? setCondition("2번") : setCondition("1번");
+  // };
+
+  const [practice, setPractice] = useState("1번");
+  const onChange = () => {
+    practice === "1번" ? setPractice("2번") : setPractice("1번");
+  };
+
   return (
     <div className="App">
       {/* <MainHeader text="Hello, props world!" /> */}
@@ -88,7 +103,7 @@ function App() {
       {/* <h1>안녕하세요!</h1>
       <span>반갑습니다!</span> */}
 
-      <table border="1">
+      {/* <table border="1">
         <tbody>
           <tr>
             <td>1</td>
@@ -99,7 +114,13 @@ function App() {
             <TableColumn />
           </tr>
         </tbody>
-      </table>
+      </table> */}
+
+      {/* {condition !== "1번" ? <ConditionalRender /> : <ConditionalRender2 />}
+      <button onClick={onChange}>{condition}</button> */}
+
+      {practice === "1번" ? <PracticeOne text="1번" /> : <PracticeTwo text="2번" />}
+      <button onClick={onChange}>{practice}</button>
     </div>
   );
 }
