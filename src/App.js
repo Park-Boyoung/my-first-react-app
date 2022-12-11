@@ -27,6 +27,7 @@ import PracticeTwo from "./components/PracticeTwo";
 import TestUseEffect from "./components/TestUseEffect";
 import Timer from "./components/Timer";
 import PracticeTimer from "./components/PracticeTimer";
+import UseEffectFetch from "./components/UseEffectFetch";
 
 // function App() {
 //   return (
@@ -80,12 +81,12 @@ function App() {
   //   practice === "1번" ? setPractice("2번") : setPractice("1번");
   // };
 
-  const [show, setShow] = useState(false);
-  const buttonEl = useRef();
+  // const [show, setShow] = useState(false);
+  // const buttonEl = useRef();
 
-  useEffect(() => {
-    buttonEl.current.focus();
-  }, []);
+  // useEffect(() => {
+  //   buttonEl.current.focus();
+  // }, []);
 
   return (
     <div className="App">
@@ -136,10 +137,13 @@ function App() {
 
       {/* {show && <Timer />}
       <button onClick={() => setShow(!show)}>버튼</button> */}
-      {show && <PracticeTimer />}
+
+      {/* {show && <PracticeTimer />}
       <button onClick={() => setShow(!show)} ref={buttonEl}>
         {show ? "숨기기" : "보이기"}
-      </button>
+      </button> */}
+
+      <UseEffectFetch />
     </div>
   );
 }
