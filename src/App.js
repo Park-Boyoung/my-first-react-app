@@ -20,12 +20,13 @@ import RandomQuiz from "./components/RandomQuiz";
 import ReactFragment from "./components/ReactFragment";
 import TableColumn from "./components/TableColumn";
 import ConditionalRender from "./components/ConditionalRender";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import ConditionalRender2 from "./components/ConditionalRender2";
 import PracticeOne from "./components/PracticeOne";
 import PracticeTwo from "./components/PracticeTwo";
 import TestUseEffect from "./components/TestUseEffect";
 import Timer from "./components/Timer";
+import PracticeTimer from "./components/PracticeTimer";
 
 // function App() {
 //   return (
@@ -80,6 +81,11 @@ function App() {
   // };
 
   const [show, setShow] = useState(false);
+  const buttonEl = useRef();
+
+  useEffect(() => {
+    buttonEl.current.focus();
+  }, []);
 
   return (
     <div className="App">
@@ -127,8 +133,13 @@ function App() {
       <button onClick={onChange}>{practice}</button> */}
 
       {/* <TestUseEffect /> */}
-      {show && <Timer />}
-      <button onClick={() => setShow(!show)}>버튼</button>
+
+      {/* {show && <Timer />}
+      <button onClick={() => setShow(!show)}>버튼</button> */}
+      {show && <PracticeTimer />}
+      <button onClick={() => setShow(!show)} ref={buttonEl}>
+        {show ? "숨기기" : "보이기"}
+      </button>
     </div>
   );
 }
