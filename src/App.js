@@ -24,6 +24,7 @@ import { useState } from "react";
 import ConditionalRender2 from "./components/ConditionalRender2";
 import PracticeOne from "./components/PracticeOne";
 import PracticeTwo from "./components/PracticeTwo";
+import TestUseEffect from "./components/TestUseEffect";
 
 // function App() {
 //   return (
@@ -72,10 +73,10 @@ function App() {
   //   condition === "1번" ? setCondition("2번") : setCondition("1번");
   // };
 
-  const [practice, setPractice] = useState("1번");
-  const onChange = () => {
-    practice === "1번" ? setPractice("2번") : setPractice("1번");
-  };
+  // const [practice, setPractice] = useState("1번");
+  // const onChange = () => {
+  //   practice === "1번" ? setPractice("2번") : setPractice("1번");
+  // };
 
   return (
     <div className="App">
@@ -119,8 +120,10 @@ function App() {
       {/* {condition !== "1번" ? <ConditionalRender /> : <ConditionalRender2 />}
       <button onClick={onChange}>{condition}</button> */}
 
-      {practice === "1번" ? <PracticeOne text="1번" /> : <PracticeTwo text="2번" />}
-      <button onClick={onChange}>{practice}</button>
+      {/* {practice === "1번" ? <PracticeOne text="1번" /> : <PracticeTwo text="2번" />}
+      <button onClick={onChange}>{practice}</button> */}
+
+      <TestUseEffect />
     </div>
   );
 }
