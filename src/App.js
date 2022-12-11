@@ -13,6 +13,11 @@ import CustomList from "./components/Customlist";
 import CustomObj from "./components/CustomObj";
 import ChangeObj from "./components/ChangeObj";
 import Comparing from "./components/Comparing";
+import TestRef from "./components/TestRef";
+import ChangeFocus from "./components/ChangeFocus";
+import RefDOM from "./components/RefDOM";
+import RandomQuiz from "./components/RandomQuiz";
+import ReactFragment from "./components/ReactFragment";
 
 // function App() {
 //   return (
@@ -73,7 +78,12 @@ function App() {
       {/* <CustomList arr={nameArr} /> */}
       {/* <CustomObj obj={pororoObj} /> */}
       {/* <ChangeObj objArr={pororoObjArr} /> */}
-      <Comparing />
+      {/* <Comparing /> */}
+      {/* <TestRef /> */}
+      {/* <ChangeFocus /> */}
+      {/* <RefDOM /> */}
+      {/* <RandomQuiz /> */}
+      <ReactFragment />
     </div>
   );
 }
