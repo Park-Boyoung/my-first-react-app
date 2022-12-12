@@ -28,6 +28,10 @@ import TestUseEffect from "./components/TestUseEffect";
 import Timer from "./components/Timer";
 import PracticeTimer from "./components/PracticeTimer";
 import UseEffectFetch from "./components/UseEffectFetch";
+import UsingUseMemo from "./components/UsingUseMemo";
+import TestinlineCSS from "./components/TestinlineCSS";
+import TestCssFile from "./components/TestCssFile";
+import TestStyled from "./components/TestStyled";
 
 // function App() {
 //   return (
@@ -143,7 +147,12 @@ function App() {
         {show ? "숨기기" : "보이기"}
       </button> */}
 
-      <UseEffectFetch />
+      {/* <UseEffectFetch /> */}
+
+      {/* <UsingUseMemo /> */}
+      {/* <TestinlineCSS /> */}
+      {/* <TestCssFile /> */}
+      <TestStyled />
     </div>
   );
 }
