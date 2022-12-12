@@ -32,6 +32,8 @@ import UsingUseMemo from "./components/UsingUseMemo";
 import TestinlineCSS from "./components/TestinlineCSS";
 import TestCssFile from "./components/TestCssFile";
 import TestStyled from "./components/TestStyled";
+import AppLogoSpin from "./components/AppLogoSpin";
+import logo from "./logo.svg";
 
 // function App() {
 //   return (
@@ -152,7 +154,8 @@ function App() {
       {/* <UsingUseMemo /> */}
       {/* <TestinlineCSS /> */}
       {/* <TestCssFile /> */}
-      <TestStyled />
+      {/* <TestStyled /> */}
+      <AppLogoSpin />
     </div>
   );
 }
