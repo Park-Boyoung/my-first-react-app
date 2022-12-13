@@ -36,6 +36,10 @@ import AppLogoSpin from "./components/AppLogoSpin";
 import logo from "./logo.svg";
 import Images from "./components/Images";
 import Dialog from "./components/Dialog";
+import WelcomeDialog from "./components/WelcomeDialog";
+import FanctBorder from "./components/FancyBorder";
+import SignUpDialog from "./components/SignUpDialog";
+import FancyBorder from "./components/FancyBorder";
 
 // function App() {
 //   return (
@@ -160,9 +164,36 @@ function App() {
       {/* <AppLogoSpin /> */}
 
       {/* <Images /> */}
-      <>
+      {/* <>
         <Dialog color="orange" title="Welcome to summoner's lift" message="소환사의 협곡에 오신 것을 환영합니다." />
-      </>
+      </> */}
+      {/* <WelcomeDialog /> */}
+      {/* <FanctBorder color="blue">
+        <h1>Hello, props.children</h1>
+        <h1>Hello, props.children</h1>
+        <p>이건 매우 유용합니다.</p>
+        <WelcomeDialog />
+      </FanctBorder> */}
+      {/* <SignUpDialog /> */}
+      {/* <FancyBorder color="red">
+        <SignUpDialog />
+      </FancyBorder> */}
+      {/* <FancyBorder color="red">
+        <Dialog
+          color="orange"
+          title={<button onClick={() => alert("Welcome!")}>웰컴 버튼!</button>}
+          message="회원 가입이 필요한 서비스 입니다"
+        >
+          <Comparing />
+          <a href="#">회원 가입 페이지로 이동</a>
+        </Dialog>
+      </FancyBorder> */}
+
+      <Dialog
+        // color="skyblue"
+        title={<button onClick={() => alert("Welcome!")}>웰컴 버튼!</button>}
+        message="회원 가입이 필요한 서비스 입니다"
+      ></Dialog>
     </div>
   );
 }
