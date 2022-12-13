@@ -1,4 +1,4 @@
-import dogImg from "../img/dog.jpeg";
+import dogImg from "../images/dog.jpeg";
 import React, { Component } from "react";
 
 // 클래스형 컴포넌트

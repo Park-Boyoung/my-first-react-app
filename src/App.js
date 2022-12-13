@@ -34,6 +34,8 @@ import TestCssFile from "./components/TestCssFile";
 import TestStyled from "./components/TestStyled";
 import AppLogoSpin from "./components/AppLogoSpin";
 import logo from "./logo.svg";
+import Images from "./components/Images";
+import Dialog from "./components/Dialog";
 
 // function App() {
 //   return (
@@ -155,7 +157,12 @@ function App() {
       {/* <TestinlineCSS /> */}
       {/* <TestCssFile /> */}
       {/* <TestStyled /> */}
-      <AppLogoSpin />
+      {/* <AppLogoSpin /> */}
+
+      {/* <Images /> */}
+      <>
+        <Dialog color="orange" title="Welcome to summoner's lift" message="소환사의 협곡에 오신 것을 환영합니다." />
+      </>
     </div>
   );
 }
